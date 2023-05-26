@@ -1,0 +1,10 @@
+<launch>
+  
+  <!-- RUN THE LAUNCH FILE FOR THE CAMERA -->
+  <!-- <include file="$(find realsense2_camera)/launch/rs_d435_camera_with_model.launch" /> -->
+  <!-- RUN ROS NODE TO READ DEPTH DATA -->
+  
+  <node pkg="abb_irb120_moveit_config" type="move_robot.py" name="move_robot" output="screen" />
+  
+
+</launch>

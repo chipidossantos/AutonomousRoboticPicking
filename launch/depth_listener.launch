@@ -1,0 +1,11 @@
+<launch>
+  
+  <!-- RUN THE LAUNCH FILE FOR THE CAMERA -->
+  <!-- <include file="$(find realsense2_camera)/launch/rs_d435_camera_with_model.launch" /> -->
+  <!-- RUN ROS NODE TO READ DEPTH DATA -->
+  
+  <node pkg="abb_irb120_moveit_config" type="depth_listener.py" name="image_subscriber" output="screen" />
+  <node pkg="abb_irb120_moveit_config" type="transformation_calc.py" name="transformation_calc" output="screen" />
+  
+
+</launch>
