@@ -2,7 +2,7 @@
 
 
 ## Project Description
-Research project were I developed an Autonomous Robotic Picking system. It consists of an ABB IRB120 industrial robotic arm, an Intel Realsense D415 depth camera, and a software stack that performs computer vision for object position detection, mathematical calculations for frame tranformation, motion planning, and communication and control of the robot controller.
+Research project were I developed an Autonomous Robotic Picking system. It consists of an ABB IRB120 industrial robotic arm, an Intel Realsense D415 depth camera, and a software stack that performs computer vision for object position detection, mathematical calculations for frame transformation, motion planning, and communication and control of the robot controller.
 
 The system is built on a [ROS](https://www.ros.org/) architecture in order to integrate all software and hardware components. It uses the [abb_experimental](https://github.com/ros-industrial/abb_experimental) package to set up a client-server communication pathway between the ROS network and the robot controller, allowing it to command robot positions and waypoints as well as collect joint data. The system uses the [realsense-ros](https://github.com/IntelRealSense/realsense-ros) package in order to integrate the RGB and depth data from the camera into the ROS framework. For motion planning and visualization I am levaring the capabilities of [MoveIt](https://moveit.ros.org/) and [RVIZ](http://wiki.ros.org/rviz). Finally, the code running the system is modular in order to allow for easy integration of upgraded algorithms and all different software components communicate via a series of ROS topics and messages. 
 
