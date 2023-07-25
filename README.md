@@ -1,5 +1,7 @@
 # Autonomous Robotic Picking
 
+## Video
+[![Autonomous Robotic Picking - Project Presentation](https://img.youtube.com/vi/8_NTol-urPM/0.jpg)](https://www.youtube.com/watch?v=8_NTol-urPM)
 
 ## Project Description
 Research project were I developed an Autonomous Robotic Picking system. It consists of an ABB IRB120 industrial robotic arm, an Intel Realsense D415 depth camera, and a software stack that performs computer vision for object position detection, mathematical calculations for frame transformation, motion planning, and communication and control of the robot controller.
@@ -12,6 +14,4 @@ The main code that runs the system is found under the [src](src) directory, whil
 * [src/transformation_calc.py](src/transformation_calc.py): perform mathematical calculation for transforming the object position from the camera frame to the robot frame of reference. This is done by using a transformation matrix tha was determined via a calibration procedure. Ensure robot is safe to move and publish final object position.
 * [src/move_robot.py](src/move_robot.py): receive final object position, perform motion planning by using the move_group python interface for MoveIt, command motion of the robot and ensure motion plan was followed and joint positions are as expected.
 
-## Video
-[![Autonomous Robotic Picking - Project Presentation](https://img.youtube.com/vi/8_NTol-urPM/0.jpg)](https://www.youtube.com/watch?v=8_NTol-urPM)
 
